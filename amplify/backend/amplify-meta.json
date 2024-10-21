@@ -1,0 +1,56 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-food-dev-83336-authRole",
+      "UnauthRoleArn": "arn:aws:iam::288761755406:role/amplify-food-dev-83336-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::288761755406:role/amplify-food-dev-83336-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-food-dev-83336-deployment",
+      "UnauthRoleName": "amplify-food-dev-83336-unauthRole",
+      "StackName": "amplify-food-dev-83336",
+      "StackId": "arn:aws:cloudformation:eu-north-1:288761755406:stack/amplify-food-dev-83336/0c57d950-839e-11ef-87ec-065e11168c09",
+      "AmplifyAppId": "d1ru5heqt70edg"
+    }
+  },
+  "auth": {
+    "food831af8a1": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-food-dev-83336-deployment/amplify-cfn-templates/auth/food831af8a1-cloudformation-template.json",
+        "logicalId": "authfood831af8a1"
+      },
+      "lastPushTimeStamp": "2024-10-06T05:21:41.815Z",
+      "output": {
+        "UserPoolId": "eu-north-1_ksHqGykK7",
+        "AppClientIDWeb": "5i8900dta48q73gns6006v3u1c",
+        "AppClientID": "66c9dq0e8vq42k8aeop6nurmo4",
+        "IdentityPoolId": "eu-north-1:e802ffbb-5981-41b3-bda9-fe20d5d6f480",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-north-1:288761755406:userpool/eu-north-1_ksHqGykK7",
+        "IdentityPoolName": "food831af8a1_identitypool_831af8a1__dev",
+        "UserPoolName": "food831af8a1_userpool_831af8a1"
+      },
+      "lastPushDirHash": "6teQET1ZecxdcLvSDvgCfmBWDxQ="
+    }
+  }
+}
